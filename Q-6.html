@@ -1,0 +1,26 @@
+<h1 id="total" style="color:maroon"></h1>
+<h2 id="percentage" style="color:darkblue"></h2>
+<script type="text/javascript">
+    var phy = parseInt(prompt("enter the marks:- "));
+    var che = parseInt(prompt("enter the marks:- "));
+    var bio = parseInt(prompt("enter the marks:- "));
+    var mathe = parseInt(prompt("enter the marks:- "));
+    var com = parseInt(prompt("enter the marks:- "));
+
+    var per = (phy + che + bio + mathe + com) / 5.0;
+    document.getElementById('total').innerHTML = "per = "+per;
+    
+    if(per >= 90){
+        document.getElementById('percentage').innerHTML = "Grade A";
+    }else if(per >=80){
+        document.getElementById('percentage').innerHTML = "Grade B";
+    }else if(per >= 70){
+        document.getElementById('percentage').innerHTML = "Grade C";
+    }else if(per >= 60){
+        document.getElementById('percentage').innerHTML = "Grade D";
+    }else if(per >= 50){
+        document.getElementById('percentage').innerHTML = "Grade E";
+    }else{
+        document.getElementById('percentage').innerHTML = "Grade F";
+    }
+</script>
